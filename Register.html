@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        .full-page {
+            height: 100%;
+            width: 100%;
+            background-image: url("assets/images/blog-1.jpg");
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            color: white;
+        }
+
+        .form-box {
+            top: 40px;
+            width: 380px;
+            height: 510px;
+            position: relative;
+            margin: 2% auto;
+            background: rgba(7, 0, 0, 0.3);
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        .input-group-register {
+            top: 120px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px 0;
+            margin: 10px 0;
+            border: 1px solid white;
+            outline: block;
+            text-align: center;
+            color: white;
+            background: transparent;
+        }
+
+        .submit-btn {
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background: hsl(293, 95%, 39%);
+            border: 0;
+            outline: block;
+            border-radius: 30px;
+        }
+
+        .check-box {
+            margin: 30px 10px 34px 0;
+        }
+
+        span {
+            color: white;
+            font-size: 12px;
+            bottom: 68px;
+        }
+
+        #register {
+            left: 50px;
+        }
+
+        #register input {
+            color: white;
+            font-size: 15;
+        }
+    </style>
+    <!---we had linked our css file----->
+</head>
+
+<body>
+    <div class="full-page">
+        <div id='login-form' class='login-page'>
+            <div class="form-box">
+
+                <h2 style="    text-align: center;
+                color: hsl(293, 95%, 39%);">Register</h2>
+
+                <form id='register' class='input-group-register'>
+                    <input type='text' class='input-field' placeholder='First Name' required>
+                    <input type='text' class='input-field' placeholder='Last Name ' required>
+                    <input type='email' class='input-field' placeholder='Email Id' required>
+                    <input type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='password' class='input-field' placeholder='Confirm Password' required>
+                    <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit' class='submit-btn'>Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
